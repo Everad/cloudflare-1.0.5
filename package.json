@@ -1,0 +1,78 @@
+{
+  "_from": "cloudflare@1.0.5",
+  "_id": "cloudflare@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-YAMf5x8NY1ve84LG/pOl2Fu/Rt/qnZXK/5Mux46B2k0yPqc6kJORnKsji1fJIsztKZOOyOhDx2IFfOggPaWUVg==",
+  "_location": "/cloudflare",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cloudflare@1.0.5",
+    "name": "cloudflare",
+    "escapedName": "cloudflare",
+    "rawSpec": "1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "1.0.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cloudflare/-/cloudflare-1.0.5.tgz",
+  "_shasum": "6d80a8bb12306fc3434fabaec43602995cbe3577",
+  "_spec": "cloudflare@1.0.5",
+  "_where": "/Users/everuser/everad/landings",
+  "author": {
+    "name": "Terin Stock",
+    "email": "terinjokes@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudflare/node-cloudflare/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "es-class": "^2.1.1",
+    "got": "^6.3.0",
+    "lodash": "^4.13.1",
+    "spdy": "^3.3.2",
+    "url-join": "^1.1.0",
+    "verymodel": "git+https://github.com/terinjokes/VeryModel.git#old_data"
+  },
+  "deprecated": false,
+  "description": "CloudFlare API client",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "coveralls": "^2.11.9",
+    "nock": "^8.0.0",
+    "nyc": "^8.0.0",
+    "semantic-release": "^4.3.5",
+    "xo": "^0.16.0"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test"
+  ],
+  "homepage": "https://github.com/cloudflare/node-cloudflare",
+  "keywords": [
+    "cloudflare",
+    "api"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "cloudflare",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudflare/node-cloudflare.git"
+  },
+  "scripts": {
+    "coverage": "cat ./coverage/lcov.info | coveralls",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "xo && nyc --reporter=lcov -- ava"
+  },
+  "version": "1.0.5",
+  "xo": {
+    "space": true
+  }
+}
